@@ -14,7 +14,6 @@ if (chosenDate.getDay() === 0) {
 }
     const name = document.getElementById("name").value;
     const date = document.getElementById("date").value;
-    const time = document.getElementById("time").value;
 
     const service = selectedService.textContent.replace("Вы выбрали: ", "");
 
@@ -28,8 +27,7 @@ message.innerHTML =
     "<strong>Спасибо, " + name + "!</strong><br>" +
     "Услуга: " + service + "<br>" +
     "Дата: " + formattedDate + "<br>" +
-    "Время: " + time + "<br>" +
-    "Заявка принята 🚗";
+    "Заявка принята, мы с Вами свяжемся как можно быстрее 🚗";
 
     form.reset();
 });
