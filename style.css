@@ -143,7 +143,10 @@ body {
 }
 
 .services {
+    display: grid;
+    grid-template-columns: repeat(3, 220px);
     gap: 10px;
+    justify-content: center;
 }
 .service-card:hover {
     transform: translateY(-10px);
