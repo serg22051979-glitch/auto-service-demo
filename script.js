@@ -41,7 +41,14 @@ serviceCards.forEach(function(card) {
     });
 });
 const dateInput = document.getElementById("date");
+dateInput.addEventListener("change", function () {
+    const selectedDate = new Date(this.value + "T00:00:00");
 
+    if (selectedDate.getDay() === 0) {
+        alert("По воскресеньям автосервис не работает. Выберите другую дату.");
+        this.value = "";
+    }
+});
 const today = new Date();
 const year = today.getFullYear();
 const month = String(today.getMonth() + 1).padStart(2, "0");
