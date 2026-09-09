@@ -18,11 +18,18 @@ if (chosenDate.getDay() === 0) {
 
     const service = selectedService.textContent.replace("Вы выбрали: ", "");
 
-    message.textContent =
-        "Спасибо, " + name +
-        "! Запись на услугу «" + service +
-        "» принята на " + date +
-        " в " + time + " 🚗";
+const formattedDate = new Date(date + "T00:00:00").toLocaleDateString("ru-RU", {
+    day: "numeric",
+    month: "long",
+    year: "numeric"
+});
+
+message.innerHTML =
+    "<strong>Спасибо, " + name + "!</strong><br>" +
+    "Услуга: " + service + "<br>" +
+    "Дата: " + formattedDate + "<br>" +
+    "Время: " + time + "<br>" +
+    "Заявка принята 🚗";
 
     form.reset();
 });
