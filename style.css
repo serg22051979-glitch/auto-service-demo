@@ -136,6 +136,50 @@ body {
 .service-icon {
     font-size: 42px;
 }
+.about {
+    background: #111;
+    color: white;
+}
+
+.advantages {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.advantage {
+    flex: 1;
+}
+
+.advantage strong {
+    display: block;
+    font-size: 42px;
+    color: #ffb000;
+}
+
+.advantage span {
+    font-size: 18px;
+}
+
+.prices {
+    background: white;
+}
+
+.price-list {
+    max-width: 700px;
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+}
+
+.price-item strong {
+    color: #222;
+}
 @media (max-width: 700px) {
 
     .header .container {
@@ -160,5 +204,8 @@ body {
     }
 .services {
     grid-template-columns: 1fr;
+}
+    .advantages {
+    flex-direction: column;
 }
 }
