@@ -12,9 +12,16 @@ form.addEventListener("submit", function(event) {
     form.reset();
 });
 const serviceCards = document.querySelectorAll(".service-card");
+const selectedService = document.getElementById("selectedService");
 
 serviceCards.forEach(function(card) {
     card.addEventListener("click", function() {
+
+        const serviceName = card.querySelector("h3").textContent;
+
+        selectedService.textContent =
+            "Вы выбрали: " + serviceName;
+
         document.getElementById("contacts").scrollIntoView({
             behavior: "smooth"
         });
