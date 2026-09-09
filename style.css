@@ -355,5 +355,5 @@ body {
     border: 1px solid #ccc;
     border-radius: 7px;
     background: white;
-    resize: vertical;
+    resize: none;
 }
