@@ -121,14 +121,30 @@ body {
 
 .service-card {
     background: white;
-    padding: 30px;
-    border-radius: 12px;
+    padding: 20px;
+    border-radius: 10px;
     border: 2px solid transparent;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
     cursor: pointer;
 }
+.service-icon {
+    font-size: 34px;
+}
 
+.service-card h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.service-card p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.services {
+    gap: 18px;
+}
 .service-card:hover {
     transform: translateY(-10px);
     background: #fff3cd;
