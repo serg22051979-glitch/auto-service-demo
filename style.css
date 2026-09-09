@@ -357,3 +357,9 @@ body {
     background: white;
     resize: none;
 }
+.date-label {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0 10px;
+}
