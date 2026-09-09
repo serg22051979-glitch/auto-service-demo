@@ -155,11 +155,50 @@
     </div>
 </section>
 
-    <section id="contacts" class="section">
-        <div class="container">
-            <h2>Контакты</h2>
+    <section id="contacts" class="section contacts">
+    <div class="container">
+
+        <h2>Записаться на ремонт</h2>
+
+        <p class="contacts-text">
+            Оставьте свои данные, и мы свяжемся с вами.
+        </p>
+
+        <form id="bookingForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Ваше имя"
+                required
+            >
+
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Номер телефона"
+                required
+            >
+
+            <button type="submit">
+                Отправить заявку
+            </button>
+
+        </form>
+
+        <p id="message"></p>
+
+        <div class="contact-info">
+            <p>📍 Helsinki, Finland</p>
+            <p>☎ +358 40 123 45 67</p>
+            <p>✉ autoservice@example.com</p>
+            <p>🕒 Пн–Сб: 09:00–18:00</p>
         </div>
-    </section>
+
+    </div>
+</section>
+
+<script src="script.js"></script>
 
 </main>
 
