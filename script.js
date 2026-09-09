@@ -11,3 +11,12 @@ form.addEventListener("submit", function(event) {
 
     form.reset();
 });
+const serviceCards = document.querySelectorAll(".service-card");
+
+serviceCards.forEach(function(card) {
+    card.addEventListener("click", function() {
+        document.getElementById("contacts").scrollIntoView({
+            behavior: "smooth"
+        });
+    });
+});
