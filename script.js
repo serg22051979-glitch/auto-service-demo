@@ -5,7 +5,13 @@ const serviceCards = document.querySelectorAll(".service-card");
 
 form.addEventListener("submit", function(event) {
     event.preventDefault();
+const selectedDate = document.getElementById("date").value;
+const chosenDate = new Date(selectedDate + "T00:00:00");
 
+if (chosenDate.getDay() === 0) {
+    alert("По воскресеньям автосервис не работает. Выберите другую дату.");
+    return;
+}
     const name = document.getElementById("name").value;
     const date = document.getElementById("date").value;
     const time = document.getElementById("time").value;
