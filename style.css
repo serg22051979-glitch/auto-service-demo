@@ -123,12 +123,17 @@ body {
     background: white;
     padding: 30px;
     border-radius: 12px;
+    border: 2px solid transparent;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
+
 .service-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    transform: translateY(-10px);
+    background: #fff8e6;
+    border-color: #ffb000;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
 }
 
 .service-card h3 {
