@@ -332,3 +332,28 @@ body {
     border-color: #ffb000;
     box-shadow: 0 0 0 3px rgba(255, 176, 0, 0.15);
 }
+.details-label {
+    display: block;
+    width: 100%;
+    margin: 20px 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#details {
+    display: block;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 120px;
+    box-sizing: border-box;
+    padding: 16px 18px;
+    margin: 0 0 20px 0;
+
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    background: white;
+    resize: vertical;
+}
