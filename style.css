@@ -57,6 +57,9 @@ body {
     background: #252525;
     color: white;
     padding: 110px 0;
+    background:
+  linear-gradient(rgba(20, 20, 20, 0.75), rgba(20, 20, 20, 0.75)),
+  url("service.jpg.png") center/cover no-repeat;
 }
 
 .hero-label {
