@@ -62,3 +62,14 @@ const month = String(today.getMonth() + 1).padStart(2, "0");
 const day = String(today.getDate()).padStart(2, "0");
 
 dateInput.min = `${year}-${month}-${day}`;
+flatpickr("#date", {
+    minDate: "today",
+
+    disable: [
+        function(date) {
+            return date.getDay() === 0;
+        }
+    ],
+
+    dateFormat: "Y-m-d"
+});
