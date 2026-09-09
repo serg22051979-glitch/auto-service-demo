@@ -1,17 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     color: #222;
+    background: #f4f4f4;
 }
 
-h1 {
-    color: #d32f2f;
-    text-align: center;
-    margin-top: 80px;
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
-p {
-    text-align: center;
+
+/* Шапка */
+
+.header {
+    background: #111;
+    padding: 20px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 17px;
+}
+
+.menu a:hover {
+    color: #ffb000;
+}
+
+
+/* Первый экран */
+
+.hero {
+    background: #252525;
+    color: white;
+    padding: 110px 0;
+}
+
+.hero-label {
+    color: #ffb000;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    max-width: 750px;
+    margin: 10px 0 20px;
+    font-size: 54px;
+    line-height: 1.1;
+}
+
+.hero-text {
+    max-width: 650px;
     font-size: 20px;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 16px 28px;
+
+    background: #ffb000;
+    color: #111;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 6px;
+}
+
+.button:hover {
+    background: #ffc43d;
+}
+
+
+/* Секции */
+
+.section {
+    padding: 70px 0;
+}
+
+.section h2 {
+    font-size: 36px;
+}
+
+
+/* Телефон */
+
+@media (max-width: 700px) {
+
+    .header .container {
+        display: block;
+    }
+
+    .menu {
+        margin-top: 15px;
+    }
+
+    .menu a {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+
+    .hero {
+        padding: 70px 0;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
 }
