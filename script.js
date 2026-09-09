@@ -23,10 +23,10 @@ const formattedDate = new Date(date + "T00:00:00").toLocaleDateString("ru-RU", {
     year: "numeric"
 });
 
-message.innerHTML =
+    message.innerHTML =
     "<strong>Спасибо, " + name + "!</strong><br>" +
     "Услуга: " + service + "<br>" +
-    "Дата: " + formattedDate + "<br>" +
+    "Дата: " + date + "<br>" +
     "Заявка принята, мы с Вами свяжемся как можно быстрее 🚗";
 
     form.reset();
